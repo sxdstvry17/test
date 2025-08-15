@@ -35,6 +35,7 @@ public class BulletLogic : MonoBehaviour
         }
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         yield return new WaitForSeconds(destroyDelay);
+        Destroy(gameObject);
     }
     IEnumerator Infect(GameObject obstacle)
     {
